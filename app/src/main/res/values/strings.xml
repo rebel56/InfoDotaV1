@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">InfoDotaV1</string>
+    <string name="title1">Title</string>
+    <string name="deskripsi1">Deskripsi</string>
+    <string name="aku">aku</string>
+    <string name="deskripsi2">Deskripsi</string>
+    <string name="title2">Title</string>
+    <string name="deskripsi3">Deskripsi</string>
+    <string name="title3">Title</string>
+    <string name="deskripsi4">Deskripsi</string>
+    <string name="title4">Title</string>
+    <string name="title5">Title</string>
+    <string name="deskrips5i">Deskripsi</string>
+    <string name="news">NEWS</string>
+    <string name="update">UPDATE</string>
+    <string name="skills">SKILLS</string>
+    <string name="item">ITEM</string>
+    <string name="hero">HERO</string>
+    <string name="all_about_dota_2">ALL ABOUT DOTA 2</string>
+    <string name="title6">Title</string>
+    <string name="list_hero_dota_2">LIST HERO DOTA 2</string>
+    <string name="title7">Title</string>
+    <string name="item_hero_dota_2">ITEM HERO DOTA 2</string>
+    <string name="title8">Title</string>
 </resources>

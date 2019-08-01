@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,7 @@
     <RelativeLayout
         android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/detail_img_skill"
@@ -27,10 +26,10 @@
             android:layout_below="@id/detail_img_skill"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:text="Title"
-
+            android:text="@string/title4"
             android:textStyle="bold"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginStart="15dp" />
 
         <TextView
             android:id="@+id/detail_deskripsi_skill"
@@ -42,7 +41,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="25dp"
-            android:text="Deskripsi"
+            android:text="@string/deskripsi4"
             android:textSize="15sp" />
 
     </RelativeLayout>
