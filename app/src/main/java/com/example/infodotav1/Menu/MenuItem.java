@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.infodotav1.Interface.ItemClickListener;
 import com.example.infodotav1.Menu.Detail.DetailMenuItem;
 import com.example.infodotav1.Model.Item;
@@ -99,8 +100,7 @@ public class MenuItem extends AppCompatActivity {
 
                 txt_title.setText(title);
 
-                Picasso.with(ctx).load(image)
-                        .fit()
+                Glide.with(ctx).load(image)
                         .into(img);
 
 

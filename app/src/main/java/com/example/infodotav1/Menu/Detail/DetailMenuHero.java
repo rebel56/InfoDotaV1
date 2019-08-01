@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.infodotav1.Model.Hero;
 import com.example.infodotav1.R;
 import com.google.firebase.database.DataSnapshot;
@@ -54,8 +55,7 @@ public class DetailMenuHero extends AppCompatActivity {
                 txt_title.setText(hero.getTitle_hero());
                 txt_deskripsi.setText(hero.getDesc_hero());
 
-                Picasso.with(getBaseContext()).load(hero.getImage_hero())
-                        .fit()
+                Glide.with(getBaseContext()).load(hero.getImage_hero())
                         .into(imageView);
             }
 

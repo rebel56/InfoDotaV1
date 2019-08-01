@@ -27,7 +27,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:text="Title"
-
+            android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="24sp" />
 
@@ -40,6 +40,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="25dp"
+            android:textColor="#000000"
             android:text="Deskripsi"
             android:textSize="15sp" />
 

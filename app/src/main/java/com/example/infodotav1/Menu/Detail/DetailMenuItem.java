@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.infodotav1.Model.Hero;
+import com.bumptech.glide.Glide;
 import com.example.infodotav1.Model.Item;
 import com.example.infodotav1.R;
 import com.google.firebase.database.DataSnapshot;
@@ -53,8 +53,7 @@ public class DetailMenuItem extends AppCompatActivity {
                 txt_title.setText(item.getTitle());
                 txt_deskripsi.setText(item.getDesc());
 
-                Picasso.with(getBaseContext()).load(item.getImage())
-                        .fit()
+                Glide.with(getBaseContext()).load(item.getImage())
                         .into(imageView);
             }
 

@@ -3,6 +3,7 @@ package com.example.infodotav1.Menu;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
@@ -13,8 +14,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.infodotav1.Interface.ItemClickListener;
 import com.example.infodotav1.Menu.Detail.DetailMenuSkill;
+import com.example.infodotav1.Menu.Detail.DetailMenuUpdate;
 import com.example.infodotav1.Model.Skill;
 import com.example.infodotav1.Model.Update;
 import com.example.infodotav1.R;
@@ -41,7 +44,7 @@ public class MenuUpdate extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.update_recycle);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override
@@ -62,12 +65,12 @@ public class MenuUpdate extends AppCompatActivity {
                 updateViewHolder.cardview.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(MenuUpdate.this, DetailMenuSkill.class);
+                        Intent intent = new Intent(MenuUpdate.this, DetailMenuUpdate.class);
                         intent.putExtra("UpdateId", adapter.getRef(position).getKey());
                         startActivity(intent);
 
-            }
-                });
+                }
+                           });
             }
         };
         recyclerView.setAdapter(adapter);
@@ -79,9 +82,7 @@ public class MenuUpdate extends AppCompatActivity {
         View view, cardview;
         private ItemClickListener itemClickListener;
 
-        public void setItemClickListener(ItemClickListener itemClickListener) {
-            this.itemClickListener = itemClickListener;
-        }
+
 
         public UpdateViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -98,8 +99,7 @@ public class MenuUpdate extends AppCompatActivity {
 
             txt_title.setText(title);
 
-            Picasso.with(ctx).load(image)
-                    .fit()
+            Glide.with(ctx).load(image)
                     .into(img);
 
 

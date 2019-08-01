@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.infodotav1.Interface.ItemClickListener;
 import com.example.infodotav1.Menu.Detail.DetailMenuHero;
 import com.example.infodotav1.Model.Hero;
@@ -22,15 +23,22 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MenuHero extends AppCompatActivity {
+
+
 
 
     RecyclerView recyclerView;
     DatabaseReference mDatabase;
 
     FirebaseRecyclerAdapter<Hero, HeroViewHolder> adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +57,7 @@ public class MenuHero extends AppCompatActivity {
 
 
     }
+
 
     @Override
     protected void onStart() {
@@ -106,8 +115,7 @@ public class MenuHero extends AppCompatActivity {
 
             txt_title.setText(title);
 
-            Picasso.with(ctx).load(image)
-                    .fit()
+            Glide.with(ctx).load(image)
                     .into(img);
 
 

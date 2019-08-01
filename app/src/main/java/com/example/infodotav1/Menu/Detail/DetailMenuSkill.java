@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.infodotav1.Model.Hero;
 import com.example.infodotav1.Model.Skill;
 import com.example.infodotav1.R;
@@ -52,8 +53,7 @@ public class DetailMenuSkill extends AppCompatActivity {
                 txt_title.setText(skill.getTitle());
                 txt_deskripsi.setText(skill.getDesc());
 
-                Picasso.with(getBaseContext()).load(skill.getImage())
-                        .fit()
+                Glide.with(getBaseContext()).load(skill.getImage())
                         .into(imageView);
             }
 

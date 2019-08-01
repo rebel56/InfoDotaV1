@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.infodotav1.Model.Skill;
 import com.example.infodotav1.Model.Update;
 import com.example.infodotav1.R;
@@ -44,7 +45,7 @@ public class DetailMenuUpdate extends AppCompatActivity {
         }
     }
 
-    private void getDetailItem(String Itemid) {
+    private void getDetailItem(String UpdateId) {
         mDatabase.child(updateId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange( DataSnapshot dataSnapshot) {
@@ -52,8 +53,7 @@ public class DetailMenuUpdate extends AppCompatActivity {
                 txt_title.setText(update.getTitle());
                 txt_deskripsi.setText(update.getDesc());
 
-                Picasso.with(getBaseContext()).load(update.getImage())
-                        .fit()
+                Glide.with(getBaseContext()).load(update.getImage())
                         .into(imageView);
             }
 
