@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.infodotav1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dota2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Menu.Detail.DetailMenuUpdate"></activity>
+        <activity android:name=".Menu.Detail.DetailMenuSkill" />
+        <activity android:name=".Menu.Detail.DetailMenuItem" />
+        <activity android:name=".Menu.MenuUpdate" />
+        <activity android:name=".Menu.MenuSkill" />
+        <activity android:name=".Menu.MenuItem" />
+        <activity android:name=".Menu.Detail.DetailMenuHero" />
+        <activity android:name=".Menu.MenuHero" />
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

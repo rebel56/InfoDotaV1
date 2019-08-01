@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "212119404779",
+    "firebase_url": "https://infodota-66666.firebaseio.com",
+    "project_id": "infodota-66666",
+    "storage_bucket": "infodota-66666.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212119404779:android:041ac93e8015d8c3",
+        "android_client_info": {
+          "package_name": "com.example.infodotav1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212119404779-e7naa8on01sln92fu3enml628vtllonk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.infodotav1",
+            "certificate_hash": "819b46271654cf7ed7feeb662558ce9130211d5c"
+          }
+        },
+        {
+          "client_id": "212119404779-i2547rhtsi0r1bhsoc3o7rp7dd6u136g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1O2uhCxAzpHiOGTKOyDFq_OH6jNcgiTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212119404779-i2547rhtsi0r1bhsoc3o7rp7dd6u136g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Menu.Detail.DetailMenuUpdate">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/detail_img_update"
+            android:layout_width="391dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/detail_title_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_img_update"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Title"
+
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/detail_deskripsi_update"
+            android:layout_width="396dp"
+            android:layout_height="462dp"
+            android:layout_below="@id/detail_title_update"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:text="Deskripsi"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</ScrollView>
