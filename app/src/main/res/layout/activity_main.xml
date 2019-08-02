@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativetop"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="#000000">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myPict"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/dota2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:gravity="fill_vertical"
+            android:text="@string/all_about_dota_2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="100dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="140dp"
+            android:text="@string/hero"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginStart="95dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="140dp"
+            android:text="@string/item"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginStart="290dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="91dp"
+            android:layout_marginTop="290dp"
+            android:text="@string/skills"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginStart="91dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="290dp"
+            android:text="@string/update"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginStart="280dp" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_hero"
+            android:layout_width="124dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginStart="50dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logodota" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_item"
+            android:layout_width="124dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginStart="240dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logodota" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_skill"
+            android:layout_width="124dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="170dp"
+            android:adjustViewBounds="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginStart="50dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logodota" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_update"
+            android:layout_width="124dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="170dp"
+            android:adjustViewBounds="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginStart="240dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logodota" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:text="@string/news"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="340dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
